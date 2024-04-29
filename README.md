@@ -1,2 +1,2 @@
 # cuddly-invention
-UI library
+JavaScript-based UI library for webpages
