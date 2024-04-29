@@ -1,7 +1,10 @@
 let UIcontainer = {
-};
-const button = function(id, whenActive = []) {
-  UIcontainer.this.id;
-  UIcontainer.this.whenActive;
-  UIcontainer.this.element = document.getElementById("id");
+  button: function(id, whenActive = function() {}) {
+    this.id = id;
+    this.whenActive = whenActive;
+    this.element = document.getElementById("id");
+    this.listener = function() {
+      this.element.addEventListener("click", this.whenActive);
+    };
+  }
 };
